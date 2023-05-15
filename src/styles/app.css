@@ -42,6 +42,16 @@ body {
 	display: none !important;
 }
 
+.testimonial-card > div {
+	border-radius: 0.5rem;
+	box-shadow: -5px 5px 10px #e4e4e4, 5px -5px 10px #f6f6f6;
+}
+
+.dark .testimonial-card > div {
+	border-radius: 0.5rem;
+	box-shadow: -8px 8px 16px #0d1424, 8px -8px 16px #111a30;
+}
+
 .fadeIn-hidden {
 	opacity: 0;
 	transition: all 1s ease-in-out;
@@ -62,4 +72,11 @@ body {
 .fadeInLeft-show {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 992px) {
+	.testimonial-card:nth-child(2),
+	.testimonial-card:nth-child(4) {
+		transition-delay: 200ms;
+	}
 }
