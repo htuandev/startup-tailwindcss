@@ -58,3 +58,39 @@ export const reviewers = [
 		avatar: '/images/Jennie_Kim.jpg',
 	},
 ];
+
+export const plans = [
+	{
+		plan_name: 'Startup',
+		price: {
+			m: '$24.99/mo',
+			y: '$239.76/yr',
+		},
+		isAvailable: [true, true, true, true, false, false],
+	},
+	{
+		plan_name: 'Professional',
+		price: {
+			m: '$49.99/mo',
+			y: '$359.76/yr',
+		},
+		isAvailable: [true, true, true, true, true, false],
+	},
+	{
+		plan_name: 'Enterprise',
+		price: {
+			m: '$64.99/mo',
+			y: '$719.76/yr',
+		},
+		isAvailable: [true, true, true, true, true, true],
+	}
+];
+
+export const list_services = [
+	'All UI Components',
+	'Use with Unlimited Projects',
+	'Commercial Use',
+	'Email Support',
+	'Lifetime Access',
+	'Free Lifetime Updates',
+];

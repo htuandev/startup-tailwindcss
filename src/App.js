@@ -6,6 +6,7 @@ import {animateJS} from './utils/utils';
 import LightBox from './views/LightBox';
 import About from './views/About';
 import Testimonial from './views/Testimonial';
+import Pricing from './views/Pricing';
 
 function App() {
 	useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
 			<LightBox />
 			<About/>
 			<Testimonial/>
+			<Pricing/>
 		</>
 	);
 }

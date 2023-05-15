@@ -74,9 +74,26 @@ body {
 	transform: translate3d(0, 0, 0);
 }
 
+input#togglePlan:checked ~ .dot {
+	transform: translateX(100%);
+}
+
+.list-services div:last-child {
+	margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
 	.testimonial-card:nth-child(2),
 	.testimonial-card:nth-child(4) {
 		transition-delay: 200ms;
+	}
+
+	.plans:hover > .plan-card:hover {
+		transform: scale(1.05);
+	}
+
+	.plans:hover > .plan-card:not(:hover) {
+		filter: blur(4px);
+		transform: scale(0.9);
 	}
 }
