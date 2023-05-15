@@ -82,6 +82,12 @@ input#togglePlan:checked ~ .dot {
 	margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+	.feature-card:nth-child(even) {
+		transition-delay: 300ms;
+	}
+}
+
 @media (min-width: 992px) {
 	.testimonial-card:nth-child(2),
 	.testimonial-card:nth-child(4) {
@@ -95,5 +101,15 @@ input#togglePlan:checked ~ .dot {
 	.plans:hover > .plan-card:not(:hover) {
 		filter: blur(4px);
 		transform: scale(0.9);
+	}
+
+	.feature-card:nth-child(2),
+	.feature-card:nth-child(5) {
+		transition-delay: 250ms;
+	}
+
+	.feature-card:nth-child(3),
+	.feature-card:nth-child(6) {
+		transition-delay: 500ms;
 	}
 }

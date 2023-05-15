@@ -8,7 +8,7 @@ export default function About() {
 					<div className='pb-[100px] border-b border-white border-opacity-[.15]'>
 						<div className='flex flex-wrap items-center mx-[-16px]'>
 							<div className='w-full lg:w-1/2 px-4'>
-								<div className='mb-12 lg:mb-0 max-w-[570px] fadeIn-hidden'>
+								<div className='mb-12 lg:mb-0 lg:max-w-[570px] fadeIn-hidden'>
 									<h2 className='text-black dark:text-white font-bold text-3xl sm:text-4xl md:text-[45px] lg:text-4xl xl:text-[45px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight mb-6'>
 										Crafted for Startup, SaaS and Business Sites.
 									</h2>
@@ -66,7 +66,7 @@ export default function About() {
 							</div>
 						</div>
 						<div className='w-full lg:w-1/2 px-4'>
-							<div className='max-w-[470px] fadeIn-hidden'>
+							<div className='lg:max-w-[470px] fadeIn-hidden'>
 								<div className='mb-9'>
 									<h3 className='font-bold text-black dark:text-white text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4'>
 										Bug free code

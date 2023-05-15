@@ -3,8 +3,8 @@ import React from 'react';
 export default function FeatureCard({info}) {
 	const {title, svg} = info;
 	return (
-		<div className='w-full md:w-1/2 lg:w-1/3 px-4'>
-			<div className='mb-[70px] fadeIn-hidden'>
+		<div className='w-full md:w-1/2 lg:w-1/3 px-4 fadeIn-hidden feature-card'>
+			<div className='mb-[70px] fadeIn-hidden feature-card'>
 				<div className='w-[70px] h-[70px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 mb-10 text-primary'>
 					{svg}
 				</div>
