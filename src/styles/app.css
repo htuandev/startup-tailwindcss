@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+@media (min-width: 540px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 720px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 960px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1140px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1320px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+.fadeIn-hidden {
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	transform: scale(0.5);
+}
+
+.fadeIn-show {
+	opacity: 1;
+	transform: scale(1);
+}
