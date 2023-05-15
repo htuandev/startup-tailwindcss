@@ -1,13 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import HeroSVGLeft from './../components/SVG/HeroSVGLeft';
 import HeroSVGRight from '../components/SVG/HeroSVGRight';
-import {animateJS, scrollIntoView} from '../utils/utils';
+import { scrollIntoView} from '../utils/utils';
 
 export default function Hero() {
-	useEffect(() => {
-		animateJS('fadeIn');
-	});
-
 	return (
 		<section
 			id='home'
@@ -29,13 +25,13 @@ export default function Hero() {
 
 							<div className='flex items-center justify-center'>
 								<span
-									className=' cursor-pointer text-base font-semibold text-white bg-primary py-4 px-8 hover:bg-opacity-80 mx-2 rounded-md transition duration-300 ease-in-out'
+									className=' cursor-pointer select-none text-base font-semibold text-white bg-primary py-4 px-8 hover:bg-opacity-80 mx-2 rounded-md transition duration-300 ease-in-out'
 									onClick={() => scrollIntoView('features')}
 								>
 									Get Started
 								</span>
 								<span
-									className='cursor-pointer text-base font-semibold text-black bg-black bg-opacity-10 dark:text-white dark:bg-white dark:bg-opacity-10 py-4 px-8 hover:bg-opacity-20 dark:hover:bg-opacity-20 mx-2 rounded-md transition duration-300 ease-in-out'
+									className='cursor-pointer select-none text-base font-semibold text-black bg-black bg-opacity-10 dark:text-white dark:bg-white dark:bg-opacity-10 py-4 px-8 hover:bg-opacity-20 dark:hover:bg-opacity-20 mx-2 rounded-md transition duration-300 ease-in-out'
 									onClick={() => scrollIntoView('about')}
 								>
 									Learn More
