@@ -4,6 +4,7 @@ import Hero from './views/Hero';
 import {animateList} from './configs/configs';
 import {animateJS} from './utils/utils';
 import LightBox from './views/LightBox';
+import About from './views/About';
 
 function App() {
 	useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
 			<Hero />
 			<Features />
 			<LightBox />
+			<About/>
 		</>
 	);
 }
