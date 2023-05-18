@@ -55,7 +55,7 @@ body {
 .fadeIn-hidden {
 	opacity: 0;
 	transition: all 1s ease-in-out;
-	transform: scale(0.5);
+	transform: scale(0.8);
 }
 
 .fadeIn-show {
@@ -85,13 +85,20 @@ body {
 	transform: translate3d(0, 0, 0);
 }
 
-
 input#togglePlan:checked ~ .dot {
 	transform: translateX(100%);
 }
 
 .list-services div:last-child {
 	margin-bottom: 0;
+}
+
+.blog-card:nth-child(2) {
+	transition-delay: 200ms;
+}
+
+.blog-card:nth-child(3) {
+	transition-delay: 400ms;
 }
 
 @media (min-width: 768px) {

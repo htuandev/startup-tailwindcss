@@ -8,6 +8,7 @@ import About from './views/About';
 import Testimonial from './views/Testimonial';
 import Pricing from './views/Pricing';
 import Contact from './views/Contact';
+import Blog from './views/Blog';
 
 function App() {
 	useEffect(() => {
@@ -19,10 +20,11 @@ function App() {
 			<Hero />
 			<Features />
 			<LightBox />
-			<About/>
-			<Testimonial/>
-			<Pricing/>
-			<Contact/>
+			<About />
+			<Testimonial />
+			<Pricing />
+			<Blog />
+			<Contact />
 		</>
 	);
 }

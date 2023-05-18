@@ -7,6 +7,17 @@ import {
 	FeatureSVG6,
 } from '../components/SVG/FeatureSVG';
 
+import Rosé from '../assets/Roseanne_Park.jpg';
+import Jisoo from '../assets/Kim_Jisoo.jpg';
+import Lisa from '../assets/Lalisa_Manobal.jpg';
+import Jennie from '../assets/Jennie_Kim.jpg';
+import BlackPink from '../assets/BP.jpg';
+import BabyMonster from '../assets/BM.jpg';
+
+import BlogPreview01 from '../assets/blog-01.jpg';
+import BlogPreview02 from '../assets/blog-02.jpg';
+import BlogPreview03 from '../assets/blog-03.jpg';
+
 export const animateList = ['fadeIn', 'fadeInLeft', 'fadeInUp'];
 
 export const featuresList = [
@@ -40,22 +51,22 @@ export const reviewers = [
 	{
 		person_name: 'Roseanne Park',
 		job_title: 'Vocalist | Dancer',
-		avatar: '/images/Roseanne_Park.jpg',
+		avatar: Rosé,
 	},
 	{
 		person_name: 'Kim Ji-soo',
 		job_title: 'Vocalist | Visual',
-		avatar: '/images/Kim_Jisoo.jpg',
+		avatar: Jisoo,
 	},
 	{
 		person_name: 'Lalisa Manobal',
 		job_title: 'Dancer | Rapper | Vocalist',
-		avatar: '/images/Lalisa_Manobal.jpg',
+		avatar: Lisa,
 	},
 	{
 		person_name: 'Jennie Kim',
 		job_title: 'Rapper | Vocalist | Dancer',
-		avatar: '/images/Jennie_Kim.jpg',
+		avatar: Jennie,
 	},
 ];
 
@@ -83,7 +94,7 @@ export const plans = [
 			y: '$719.76/yr',
 		},
 		isAvailable: [true, true, true, true, true, true],
-	}
+	},
 ];
 
 export const list_services = [
@@ -93,4 +104,28 @@ export const list_services = [
 	'Email Support',
 	'Lifetime Access',
 	'Free Lifetime Updates',
+];
+
+export const list_blogs = [
+	{
+		category: 'Computer',
+		imgSrc: BlogPreview01,
+		title: 'Best UI components for modern websites',
+		author_name: 'BlackPink',
+		avatar: BlackPink,
+	},
+	{
+		category: 'Design',
+		imgSrc: BlogPreview02,
+		title: '9 simple ways to improve your design skills',
+		author_name: 'Roseanne Park',
+		avatar: Rosé,
+	},
+	{
+		category: 'Computer',
+		imgSrc: BlogPreview03,
+		title: 'Tips to quickly improve your coding speed.',
+		author_name: 'BabyMonster',
+		avatar: BabyMonster,
+	},
 ];
