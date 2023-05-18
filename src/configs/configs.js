@@ -7,7 +7,7 @@ import {
 	FeatureSVG6,
 } from '../components/SVG/FeatureSVG';
 
-export const animateList = ['fadeIn', 'fadeInLeft'];
+export const animateList = ['fadeIn', 'fadeInLeft', 'fadeInUp'];
 
 export const featuresList = [
 	{

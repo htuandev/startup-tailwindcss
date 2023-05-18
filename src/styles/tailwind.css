@@ -9,7 +9,7 @@
 }
 
 @layer components {
-    svg {
-        @apply select-none cursor-pointer hover:scale-110 transition-all duration-300
+    #features svg {
+        @apply select-none cursor-pointer hover:rotate-[360deg] transition-all duration-1000
     }
 }

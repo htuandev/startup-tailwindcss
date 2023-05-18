@@ -7,6 +7,7 @@ import LightBox from './views/LightBox';
 import About from './views/About';
 import Testimonial from './views/Testimonial';
 import Pricing from './views/Pricing';
+import Contact from './views/Contact';
 
 function App() {
 	useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
 			<About/>
 			<Testimonial/>
 			<Pricing/>
+			<Contact/>
 		</>
 	);
 }

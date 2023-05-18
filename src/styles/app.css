@@ -74,6 +74,18 @@ body {
 	transform: translate3d(0, 0, 0);
 }
 
+.fadeInUp-hidden {
+	transition: all 1s ease-in-out 0.2s;
+	opacity: 0;
+	transform: translate3d(0, 30px, 0);
+}
+
+.fadeInUp-show {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+
 input#togglePlan:checked ~ .dot {
 	transform: translateX(100%);
 }
