@@ -15,7 +15,7 @@ export default function LightBox() {
 	}, []);
 
 	return (
-		<section className='relative z-10 py-[120px]'>
+		<section id='support' className='relative z-10 py-[120px]'>
 			<div className='container'>
 				<div className='mx-wrap'>
 					<Heading title={'We are ready to help'} />

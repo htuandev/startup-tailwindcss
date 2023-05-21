@@ -9,6 +9,7 @@ import Testimonial from './views/Testimonial';
 import Pricing from './views/Pricing';
 import Contact from './views/Contact';
 import Blog from './views/Blog';
+import Footer from './views/Footer';
 
 function App() {
 	useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
 			<Pricing />
 			<Blog />
 			<Contact />
+			<Footer/>
 		</>
 	);
 }

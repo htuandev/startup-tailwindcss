@@ -1,9 +1,11 @@
 import React from 'react';
 import SubscribeSVG from '../components/SVG/SubscribeSVG';
+import ContactSVGLeft from '../components/SVG/ContactSVGLeft';
+import ContactSVGRight from '../components/SVG/ContactSVGRight';
 
 export default function Contact() {
 	return (
-		<section id='contact' className='pt-[120px] pb-20 overflow-hidden'>
+		<section id='contact' className='pt-[120px] pb-20 overflow-hidden relative'>
 			<div className='container'>
 				<div className='mx-wrap gap-y-10'>
 					<div className='w-full lg:w-8/12 px-4 shrink'>
@@ -102,6 +104,12 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className='absolute left-0 bottom-36 z-[-1]'>
+				<ContactSVGLeft/>
+			</div>
+			<div className='absolute right-0 top-24 z-[-1]'>
+				<ContactSVGRight/>
 			</div>
 		</section>
 	);

@@ -5,7 +5,7 @@ import BlogCard from '../components/BlogCard';
 
 export default function Blog() {
 	return (
-		<div id='blog' className='bg-screen pt-[120px] pb-20'>
+		<section id='blog' className='bg-screen pt-[120px] pb-20'>
 			<div className='container'>
 				<div className='mx-wrap'>
 					<Heading title={'Our Latest Blogs'} />
@@ -16,6 +16,6 @@ export default function Blog() {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
