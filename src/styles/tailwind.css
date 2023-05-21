@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply bg-primary-50 dark:bg-primary-950;
+		@apply bg-primary-50 dark:bg-primary-950 transition duration-500;
 	}
 
 	::selection {
@@ -34,7 +34,7 @@
 	}
 
 	.border-sub {
-		@apply border-[#8a7f80] dark:border-[#d7d3d3] 
+		@apply border-[#8a7f80] dark:border-[#d7d3d3];
 	}
 
 	.flex-center {
@@ -43,6 +43,10 @@
 
 	.btn {
 		@apply cursor-pointer select-none font-semibold bg-primary-800 text-primary-50 text-base py-4 px-8 rounded-md hover:bg-opacity-80 transition-colors duration-300;
+	}
+
+	.on-scroll {
+		@apply dark:bg-primary-800 dark:bg-opacity-40 backdrop-blur-sm bg-primary-50 bg-opacity-80 shadow-[inset_0_-1px_0_0_rgba(0,0,0,0.1)];
 	}
 
 	#features svg {

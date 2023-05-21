@@ -4,7 +4,7 @@ import {scrollIntoView} from '../utils/utils';
 export default function ScrollToTop({inView}) {
 	return (
 		<div onClick={() => scrollIntoView('home')} className={`${inView ? `invisible opacity-0` : `visible opacity-100`} transition-all duration-300`}>
-			<div className='fixed z-50 right-4 bottom-8 overflow-hidden cursor-pointer animate-bounce duration-700 ease-in-out'>
+			<div className='fixed z-50 right-4 bottom-4 overflow-hidden cursor-pointer animate-bounce duration-700 ease-in-out'>
 				<div className='p-2 bg-[#e09843] flex-center rounded-lg'>
 					<AngleUp />
 				</div>

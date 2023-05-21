@@ -12,7 +12,6 @@ module.exports = {
 				'2xl': '1320px',
 			},
 			colors: {
-				'body-color': '#c8c8c8',
 				primary: { 
 					'50': '#eef8ff',
 					'100': '#e0f2ff',

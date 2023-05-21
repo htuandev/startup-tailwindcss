@@ -18,9 +18,9 @@
 
 .tuanhngf {
 	position: relative;
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 0.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 0.5rem;
 	display: grid;
 	place-items: center;
 	z-index: 1;

@@ -157,3 +157,26 @@ export const list_blogs = [
 		avatar: BabyMonster,
 	},
 ];
+
+export const list_displays = [
+	{
+		id: 'features',
+		name: 'Features',
+	},
+	{
+		id: 'about',
+		name: 'About',
+	},
+	{
+		id: 'testimonial',
+		name: 'Reviews',
+	},
+	{
+		id: 'pricing',
+		name: 'Pricing',
+	},
+	{
+		id: 'contact',
+		name: 'Contact',
+	},
+];

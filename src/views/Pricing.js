@@ -41,7 +41,7 @@ export default function Pricing() {
 						</div>
 					</div>
 				</div>
-				<div className='mx-wrap plans gap-y-6'>
+				<div className='mx-wrap plans gap-y-6 justify-center'>
 					{plans.map((p, i) => (
 						<PlanCard plan={p} isMonthlyPackage={!isChecked} key={i} />
 					))}

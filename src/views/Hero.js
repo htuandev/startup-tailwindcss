@@ -13,7 +13,7 @@ export default function Hero() {
 			<section
 				ref={ref}
 				id='home'
-				className='relative overflow-hidden z-10 pt-[120px] pb-[110px] md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]'
+				className='relative z-10 pt-[120px] pb-[110px] md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px] -mt-[100px]'
 			>
 				<div className='container'>
 					<div className='mx-wrap'>
@@ -45,7 +45,7 @@ export default function Hero() {
 					</div>
 				</div>
 
-				<div className='absolute top-0 right-0 z-[-1]'>
+				<div className='absolute -top-[120px] right-0 z-[-1]'>
 					<HeroSVGRight />
 				</div>
 				<div className='absolute bottom-0 left-0 z-[-1]'>

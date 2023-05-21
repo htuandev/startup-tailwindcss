@@ -10,6 +10,7 @@ import Pricing from './views/Pricing';
 import Contact from './views/Contact';
 import Blog from './views/Blog';
 import Footer from './views/Footer';
+import Header from './views/Header';
 
 function App() {
 	useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
 
 	return (
 		<>
+			<Header/>
 			<Hero />
 			<Features />
 			<LightBox />
