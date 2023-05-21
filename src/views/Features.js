@@ -5,12 +5,12 @@ import FeatureCard from '../components/FeatureCard';
 
 export default function Features() {
 	return (
-		<section id='features' className='bg-primary bg-opacity-[3%] pt-[120px] pb-[50px]'>
+		<section id='features' className='bg-screen pt-[120px] pb-[50px]'>
 			<div className='container'>
-				<div className='flex flex-wrap mx-[-16px]'>
+				<div className='mx-wrap'>
 					<Heading title={'Main Features'} />
 				</div>
-				<div className='flex flex-wrap mx-[-16px]'>
+				<div className='mx-wrap gap-y-20'>
 					{featuresList.map((f, i) => (
 						<FeatureCard info={f} key={i} />
 					))}

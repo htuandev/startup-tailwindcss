@@ -4,44 +4,6 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
-.container {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 1rem;
-	padding-left: 1rem;
-}
-@media (min-width: 540px) {
-	.container {
-		max-width: 540px;
-	}
-}
-@media (min-width: 720px) {
-	.container {
-		max-width: 720px;
-	}
-}
-@media (min-width: 960px) {
-	.container {
-		max-width: 960px;
-	}
-}
-@media (min-width: 1140px) {
-	.container {
-		max-width: 1140px;
-	}
-}
-@media (min-width: 1320px) {
-	.container {
-		max-width: 1320px;
-	}
-}
-
-.gprev,
-.gnext {
-	display: none !important;
-}
-
 .testimonial-card > div {
 	border-radius: 0.5rem;
 	box-shadow: -5px 5px 10px #e4e4e4, 5px -5px 10px #f6f6f6;
@@ -52,9 +14,28 @@ body {
 	box-shadow: -8px 8px 16px #0d1424, 8px -8px 16px #111a30;
 }
 
+.card-gradient {
+	border-radius: 0.5rem;
+	background-image: linear-gradient(to right top, #c7e6fe, #cde9fe, #d3ecfe, #daefff, #e0f2ff);
+	box-shadow: -8px 8px 16px #b4c9d9, 8px -8px 16px #f4ffff;
+}
+
+.dark .card-gradient {
+	border-radius: 0.5rem;
+	background-image: linear-gradient(to right top, #2e4981, #2b3e71, #273462, #222a53, #1d2144);
+	box-shadow: -8px 8px 16px #0d1424, 8px -8px 16px #111a30;
+}
+
+.shadow-contact {
+	box-shadow: -8px 8px 16px #b4c9d9, 8px 8px 16px #f4ffff;
+}
+
+.dark .shadow-contact {
+	box-shadow: -8px 8px 16px #0d1424, 8px 8px 16px #111a30;
+}
+
 .fadeIn-hidden {
 	opacity: 0;
-	transition: all 1s ease-in-out;
 	transform: scale(0.8);
 }
 
@@ -64,9 +45,8 @@ body {
 }
 
 .fadeInLeft-hidden {
-	transition: all 1s ease-in-out;
 	opacity: 0;
-	transform: translate3d(-30px, 0, 0);
+	transform: translate3d(-100%, 0, 0);
 }
 
 .fadeInLeft-show {
@@ -75,14 +55,15 @@ body {
 }
 
 .fadeInUp-hidden {
-	transition: all 1s ease-in-out 0.2s;
 	opacity: 0;
-	transform: translate3d(0, 30px, 0);
+	transform: translate3d(0, 20px, 0);
+	visibility: hidden;
 }
 
 .fadeInUp-show {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
+	visibility: visible;
 }
 
 input#togglePlan:checked ~ .dot {
@@ -103,7 +84,7 @@ input#togglePlan:checked ~ .dot {
 
 @media (min-width: 768px) {
 	.feature-card:nth-child(even) {
-		transition-delay: 300ms;
+		transition-delay: 200ms;
 	}
 }
 
@@ -114,21 +95,47 @@ input#togglePlan:checked ~ .dot {
 	}
 
 	.plans:hover > .plan-card:hover {
-		transform: scale(1.05);
+		transform: scale(1.05) translateZ(0);
 	}
 
 	.plans:hover > .plan-card:not(:hover) {
-		filter: blur(4px);
+		filter: blur(8px);
 		transform: scale(0.9);
 	}
 
 	.feature-card:nth-child(2),
 	.feature-card:nth-child(5) {
-		transition-delay: 250ms;
+		transition-delay: 400ms;
 	}
 
 	.feature-card:nth-child(3),
 	.feature-card:nth-child(6) {
-		transition-delay: 500ms;
+		transition-delay: 600ms;
 	}
+}
+
+.plyr--full-ui input[type='range'] {
+	color: #b76e78 !important;
+}
+
+.plyr__control--overlaid {
+	background-color: #b76e78 !important;
+}
+
+.gprev,
+.gnext {
+	display: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.fadeIn-hidden,
+	.fadeInLeft-hidden,
+	.fadeInUp-hidden {
+		transition: all 1s 0.2s;
+	}
+}
+
+.filtered-bp {
+	filter: brightness(0) saturate(100%) invert(53%) sepia(4%) saturate(4824%) hue-rotate(299deg) brightness(89%)
+		contrast(84%);
 }

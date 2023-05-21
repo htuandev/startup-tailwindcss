@@ -37,8 +37,8 @@ export default function HeroSVGLeft() {
 					y2='212.24'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#3052a3' stopOpacity={0} />
+					<stop offset={1} stopColor='#3052a3' />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_25:218'
@@ -48,8 +48,8 @@ export default function HeroSVGLeft() {
 					y2='212.24'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#3052a3' stopOpacity={0} />
+					<stop offset={1} stopColor='#3052a3' />
 				</linearGradient>
 				<linearGradient
 					id='paint2_linear_25:218'
@@ -59,8 +59,8 @@ export default function HeroSVGLeft() {
 					y2='212.24'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#3052a3' stopOpacity={0} />
+					<stop offset={1} stopColor='#3052a3' />
 				</linearGradient>
 				<linearGradient
 					id='paint3_linear_25:218'
@@ -70,8 +70,8 @@ export default function HeroSVGLeft() {
 					y2='210.214'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#3052a3' stopOpacity={0} />
+					<stop offset={1} stopColor='#3052a3' />
 				</linearGradient>
 				<linearGradient
 					id='paint4_linear_25:218'
@@ -81,8 +81,8 @@ export default function HeroSVGLeft() {
 					y2='99.5816'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' />
-					<stop offset={1} stopColor='#4A6CF7' stopOpacity={0} />
+					<stop stopColor='#3052a3' />
+					<stop offset={1} stopColor='#3052a3' stopOpacity={0} />
 				</linearGradient>
 				<radialGradient
 					id='paint5_radial_25:218'

@@ -4,17 +4,17 @@ export default function TestimonialCard({person}) {
 	const {avatar, person_name, job_title} = person;
 	return (
 		<div className='w-full lg:w-1/2 px-4 fadeIn-hidden testimonial-card'>
-			<div className='bg-white dark:bg-[#1D2144] relative z-10 overflow-hidden rounded-lg p-8 lg:px-6 xl:px-8 mb-10 select-none cursor-pointer hover:outline hover:outline-offset-0 hover:outline-primary transition-all'>
+			<div className='card-gradient relative z-10 overflow-hidden rounded-lg p-8 lg:px-6 xl:px-8 mb-10 select-none cursor-pointer hover:outline hover:outline-offset-0 hover:outline-primary-800 dark:hover:outline-primary-100 transition-all'>
 				<div className='sm:flex justify-between lg:block xl:flex'>
 					<div className='w-full flex items-center'>
 						<div className='w-[60px] h-[60px] mt-2 mr-4'>
 							<img src={avatar} alt={person_name} className='rounded-full overflow-hidden' />
 						</div>
 						<div className='w-full'>
-							<h5 className='text-base md:text-lg lg:text-base xl:text-lg text-black dark:text-white font-medium mb-1'>
+							<h5 className='text-base md:text-lg lg:text-base xl:text-lg text-body font-medium mb-1'>
 								{person_name}
 							</h5>
-							<p className='text-base font-medium text-body-color'>{job_title}</p>
+							<p className='text-base font-medium text-sub'>{job_title}</p>
 						</div>
 					</div>
 					<div className='max-w-[150px] w-full flex items-center sm:justify-end lg:justify-start xl:justify-end mt-4 sm:mt-0 lg:mt-4 xl:mt-0'>
@@ -26,11 +26,11 @@ export default function TestimonialCard({person}) {
 								<RatingStar />
 								<RatingStar />
 							</div>
-							<p className='mt-2 text-sm font-medium text-body-color'>Client's Review</p>
+							<p className='mt-2 text-sm font-medium text-sub'>Client's Review</p>
 						</div>
 					</div>
 				</div>
-				<p className='text-lg font-medium text-body-color leading-relaxed pt-8 mt-6 border-t border-[#eee]'>
+				<p className='text-lg font-medium text-sub leading-relaxed pt-8 mt-6 border-t border-primary-800 dark:border-primary-100'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo urna massa, nec dictum velit dignissim
 					ac. Curabitur non cursus tortor. Nunc dignissim accumsan commodo.
 				</p>
@@ -53,8 +53,8 @@ export default function TestimonialCard({person}) {
 								y2='5.62385'
 								gradientUnits='userSpaceOnUse'
 							>
-								<stop stopColor='#4A6CF7' />
-								<stop offset={1} stopColor='#4A6CF7' stopOpacity={0} />
+								<stop stopColor='#b76e78' />
+								<stop offset={1} stopColor='#b76e78' stopOpacity={0} />
 							</linearGradient>
 						</defs>
 					</svg>

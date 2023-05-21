@@ -20,6 +20,34 @@ import BlogPreview03 from '../assets/blog-03.jpg';
 
 export const animateList = ['fadeIn', 'fadeInLeft', 'fadeInUp'];
 
+export const glightboxOptions = {
+	source: 'youtube',
+	autoplayVideos: true,
+	openEffect: 'zoom',
+	closeEffect: 'fade',
+	cssEffects: {
+		fade: {in: 'fadeIn', out: 'fadeOut'},
+		zoom: {in: 'zoomIn', out: 'zoomOut'},
+	},
+	touchNavigation: true,
+	closeOnOutsideClick: false,
+	href: 'https://youtu.be/3Ne55EliHKU',
+	type: 'video',
+	plyr: {
+		config: {
+			ratio: '16:9', // or '4:3'
+			muted: false,
+			hideControls: false,
+			youtube: {
+				noCookie: true,
+				rel: 0,
+				showinfo: 0,
+				iv_load_policy: 3,
+			},
+		},
+	},
+};
+
 export const featuresList = [
 	{
 		title: 'Crafted for Startups',

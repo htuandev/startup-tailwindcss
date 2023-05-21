@@ -32,8 +32,8 @@ export default function TestimonialSVGRight() {
 					y2='459.865'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' />
-					<stop offset={1} stopColor='#4A6CF7' stopOpacity={0} />
+					<stop stopColor='#3052a3' />
+					<stop offset={1} stopColor='#3052a3' stopOpacity={0} />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_83:2'
@@ -43,8 +43,8 @@ export default function TestimonialSVGRight() {
 					y2='675.565'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' />
-					<stop offset={1} stopColor='#4A6CF7' stopOpacity={0} />
+					<stop stopColor='#3052a3' />
+					<stop offset={1} stopColor='#3052a3' stopOpacity={0} />
 				</linearGradient>
 			</defs>
 		</svg>

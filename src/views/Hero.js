@@ -10,28 +10,28 @@ export default function Hero() {
 			className='relative overflow-hidden z-10 pt-[120px] pb-[110px] md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]'
 		>
 			<div className='container'>
-				<div className='flex flex-wrap mx-[-16px]'>
+				<div className='mx-wrap'>
 					<div className='w-full px-4'>
 						<div className='mx-auto max-w-[570px] text-center fadeIn-hidden'>
 							<div>
-								<h1 className='text-black dark:text-white font-bold text-3xl sm:text-4xl md:text-5xl leading-tight sm:leading-tight md:leading-tight mb-5'>
+								<h1 className='text-body font-bold text-3xl sm:text-4xl md:text-5xl leading-tight sm:leading-tight md:leading-tight mb-5'>
 									Startup Focused Tailwind CSS Template
 								</h1>
-								<p className='font-medium text-lg md:text-xl leading-relaxed md:leading-relaxed text-body-color dark:text-white dark:opacity-90 mb-12'>
+								<p className='font-medium text-lg md:text-xl leading-relaxed md:leading-relaxed text-sub mb-12'>
 									A Complete Tailwind CSS Web Template Crafted for - Startup, SaaS, Business, Software and Agencies.
 									Comes with high-quality design and everything you need!
 								</p>
 							</div>
 
-							<div className='flex items-center justify-center'>
+							<div className='flex-center gap-6'>
 								<span
-									className=' cursor-pointer select-none text-base font-semibold text-white bg-primary py-4 px-8 hover:bg-opacity-80 mx-2 rounded-md transition duration-300 ease-in-out'
+									className='btn'
 									onClick={() => scrollIntoView('features')}
 								>
 									Get Started
 								</span>
-								<span
-									className='cursor-pointer select-none text-base font-semibold text-black bg-black bg-opacity-10 dark:text-white dark:bg-white dark:bg-opacity-10 py-4 px-8 hover:bg-opacity-20 dark:hover:bg-opacity-20 mx-2 rounded-md transition duration-300 ease-in-out'
+									<span
+									className='btn text-body bg-opacity-20 hover:bg-opacity-30 text-primary-950'
 									onClick={() => scrollIntoView('about')}
 								>
 									Learn More

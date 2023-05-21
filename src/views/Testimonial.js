@@ -7,9 +7,9 @@ import TestimonialCard from '../components/TestimonialCard';
 
 export default function Testimonial() {
 	return (
-		<section id='testimonial' className='relative z-10 pt-[120px] pb-20 bg-primary bg-opacity-[3%]'>
+		<section id='testimonial' className='relative z-10 pt-[120px] pb-20 bg-screen'>
 			<div className='container'>
-				<div className='flex flex-wrap mx-[-16px]'>
+				<div className='mx-wrap'>
 					<Heading title={'What Our Users Says'} />
 				</div>
 				<div className='flex flex-wrap justify-center mx-[-16px]'>

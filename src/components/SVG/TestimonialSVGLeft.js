@@ -30,8 +30,8 @@ export default function TestimonialSVGLeft() {
 					y2='8.15715'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#b76e78' stopOpacity={0} />
+					<stop offset={1} stopColor='#b76e78' />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_72:302'
@@ -41,8 +41,8 @@ export default function TestimonialSVGLeft() {
 					y2='-2.84285'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#b76e78' stopOpacity={0} />
+					<stop offset={1} stopColor='#b76e78' />
 				</linearGradient>
 				<linearGradient
 					id='paint2_linear_72:302'
@@ -52,8 +52,8 @@ export default function TestimonialSVGLeft() {
 					y2='19.1572'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#b76e78' stopOpacity={0} />
+					<stop offset={1} stopColor='#b76e78' />
 				</linearGradient>
 				<linearGradient
 					id='paint3_linear_72:302'
@@ -63,8 +63,8 @@ export default function TestimonialSVGLeft() {
 					y2='31.1572'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stopColor='#4A6CF7' stopOpacity={0} />
-					<stop offset={1} stopColor='#4A6CF7' />
+					<stop stopColor='#b76e78' stopOpacity={0} />
+					<stop offset={1} stopColor='#b76e78' />
 				</linearGradient>
 			</defs>
 		</svg>
