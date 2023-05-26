@@ -17,6 +17,7 @@ import BabyMonster from '../assets/BM.jpg';
 import BlogPreview01 from '../assets/blog-01.jpg';
 import BlogPreview02 from '../assets/blog-02.jpg';
 import BlogPreview03 from '../assets/blog-03.jpg';
+import {cssTransition} from 'react-toastify';
 
 export const animateList = ['fadeIn', 'fadeInLeft', 'fadeInUp'];
 
@@ -180,3 +181,18 @@ export const list_displays = [
 		name: 'Contact',
 	},
 ];
+
+export const toastEmitter = {
+	position: 'top-right',
+	autoClose: 3000,
+	hideProgressBar: false,
+	closeOnClick: true,
+	pauseOnHover: true,
+	draggable: true,
+	progress: undefined,
+	theme: 'colored',
+	transition: cssTransition({
+		enter: 'animate__animated animate__bounceIn',
+		exit: 'animate__animated animate__bounceOut',
+	}),
+};

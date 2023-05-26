@@ -1,5 +1,6 @@
 import React from 'react';
-import {list_services} from '../configs/configs';
+import {list_services, toastEmitter} from '../configs/configs';
+import {toast} from 'react-toastify';
 
 export default function PlanCard({plan, isMonthlyPackage}) {
 	const {plan_name, price, isAvailable} = plan;
@@ -9,20 +10,20 @@ export default function PlanCard({plan, isMonthlyPackage}) {
 		isAvailable: isAvailable[i],
 	}));
 
+	const handleSelect = () =>
+		toast.info('Coming Soon', toastEmitter);
+
 	return (
 		<div className='w-full md:w-1/2 lg:w-1/3 px-4 shrink fadeIn-hidden plan-card'>
 			<div className='relative z-10 card-gradient px-8 py-10 rounded-lg select-none cursor-pointer hover:outline hover:outline-offset-0 hover:outline-primary-800 dark:hover:outline-primary-100 transition-all h-full'>
-				<h3 className='mb-2 text-4xl text-center font-semibold leading-tight text-body'>
-					{plan_name}
-				</h3>
+				<h3 className='mb-2 text-4xl text-center font-semibold leading-tight text-body'>{plan_name}</h3>
 				<h4 className='font-bold text-center text-body text-xl'>{isMonthlyPackage ? price.m : price.y}</h4>
-				<p className='text-base text-sub mb-7 mt-3'>
-					Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim.
-				</p>
-				<div className='border-b border-sub dark:border-white border-opacity-10 dark:border-opacity-10 pb-8 mb-8 cursor-pointer select-none'>
-					<span className='btn flex-center w-full bg-primary-600'>
-						Start Free Trial
-					</span>
+				<p className='text-base text-sub mb-7 mt-3'>Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim.</p>
+				<div
+					className='border-b border-sub dark:border-white border-opacity-10 dark:border-opacity-10 pb-8 mb-8 cursor-pointer select-none'
+					onClick={handleSelect}
+				>
+					<span className='btn flex-center w-full bg-primary-600'>Start Free Trial</span>
 				</div>
 				<div className='list-services'>
 					{services.map((s, i) => (

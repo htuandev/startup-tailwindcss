@@ -2,8 +2,15 @@ import React from 'react';
 import SubscribeSVG from '../components/SVG/SubscribeSVG';
 import ContactSVGLeft from '../components/SVG/ContactSVGLeft';
 import ContactSVGRight from '../components/SVG/ContactSVGRight';
-
+import {toast} from 'react-toastify';
+import { toastEmitter } from '../configs/configs';
 export default function Contact() {
+	const handleSubmit = (e) => {
+		// e.target.reset()
+		e.preventDefault();
+		toast.error('Sorry, something went wrong. Please try again later.', toastEmitter);
+	};
+
 	return (
 		<section id='contact' className='pt-[120px] pb-20 overflow-hidden relative'>
 			<div className='container'>
@@ -17,7 +24,7 @@ export default function Contact() {
 								<p className='text-sub text-base font-medium mb-12'>
 									Our support team will get back to you ASAP via email.
 								</p>
-								<form>
+								<form onSubmit={(e) => handleSubmit(e)}>
 									<div className='mx-wrap'>
 										<div className='w-full md:w-1/2 px-4'>
 											<div className='mb-8'>
@@ -26,7 +33,8 @@ export default function Contact() {
 												</label>
 												<input
 													type='text'
-                                                    name='name'
+													name='name'
+													required
 													placeholder='Enter your name'
 													className='w-full border border-transparent bg-primary-100 dark:bg-primary-600 dark:bg-opacity-10 rounded-md py-3 px-6 text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none focus:border-primary-800'
 												/>
@@ -39,7 +47,8 @@ export default function Contact() {
 												</label>
 												<input
 													type='email'
-                                                    name='email'
+													name='email'
+													required
 													placeholder='Enter your email'
 													className='w-full border border-transparent bg-primary-100 dark:bg-primary-600 dark:bg-opacity-10 rounded-md py-3 px-6 text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none focus:border-primary-800'
 												/>
@@ -53,15 +62,14 @@ export default function Contact() {
 												<textarea
 													name='message'
 													rows={5}
+													required
 													placeholder='Enter your Message'
 													className='w-full border border-transparent bg-primary-100 dark:bg-primary-600 dark:bg-opacity-10 rounded-md py-3 px-6 text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none focus:border-primary-800 resize-none'
 												/>
 											</div>
 										</div>
 										<div className='w-full px-4 grid place-items-center'>
-											<div className='btn'>
-												Submit Ticket
-											</div>
+											<input type='submit' className='btn' value='Submit Ticket' />
 										</div>
 									</div>
 								</form>
@@ -71,45 +79,43 @@ export default function Contact() {
 					<div className='w-full lg:w-4/12 px-4 shrink'>
 						<div className='relative z-10 rounded-md card-gradient p-8 sm:p-11 lg:p-8 xl:p-11 h-full fadeInUp-hidden'>
 							<div>
-								<h3 className='text-body font-bold text-2xl leading-tight mb-4'>
-									Subscribe to receive future updates
-								</h3>
+								<h3 className='text-body font-bold text-2xl leading-tight mb-4'>Subscribe to receive future updates</h3>
 								<p className='font-medium text-base text-sub leading-relaxed pb-11 mb-11 border-b border-sub border-opacity-25 dark:border-white dark:border-opacity-25'>
 									Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare massa quis lectus.
 								</p>
-								<form>
+								<form onSubmit={(e) => handleSubmit(e)}>
 									<input
 										type='text'
 										name='name'
+										required
 										placeholder='Enter your name'
 										className='w-full border dark:border-white dark:border-opacity-10 dark:bg-primary-100 dark:bg-opacity-10 rounded-md py-3 px-6 font-medium text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none mb-4 focus:border-primary-800 dark:focus:border-opacity-50'
 									/>
 									<input
 										type='email'
 										name='email'
+										required
 										placeholder='Enter your email'
 										className='w-full border dark:border-white dark:border-opacity-10 dark:bg-primary-100 dark:bg-opacity-10 rounded-md py-3 px-6 font-medium text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none mb-4 focus:border-primary-800 dark:focus:border-opacity-50'
 									/>
-									<div className='btn text-center mb-4'>
-										Subscribe
-									</div>
+									<input className='btn text-center mb-4 w-full' type='submit' value='Subscribe' />
 									<p className='text-base text-sub text-center font-medium leading-relaxed'>
 										No spam guaranteed, So please don’t send any spam mail.
 									</p>
 								</form>
-                                <div className='absolute top-0 left-0 z-[-1]'>
-                                    <SubscribeSVG/>
-                                </div>
+								<div className='absolute top-0 left-0 z-[-1]'>
+									<SubscribeSVG />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className='absolute left-0 bottom-36 z-[-1]'>
-				<ContactSVGLeft/>
+				<ContactSVGLeft />
 			</div>
 			<div className='absolute right-0 top-24 z-[-1]'>
-				<ContactSVGRight/>
+				<ContactSVGRight />
 			</div>
 		</section>
 	);

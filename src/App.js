@@ -11,7 +11,7 @@ import Contact from './views/Contact';
 import Blog from './views/Blog';
 import Footer from './views/Footer';
 import Header from './views/Header';
-
+import {ToastContainer} from 'react-toastify';
 function App() {
 	useEffect(() => {
 		animateList.map((animate) => animateJS(animate));
@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<>
-			<Header/>
+			<Header />
 			<Hero />
 			<Features />
 			<LightBox />
@@ -28,7 +28,8 @@ function App() {
 			<Pricing />
 			<Blog />
 			<Contact />
-			<Footer/>
+			<Footer />
+			<ToastContainer newestOnTop />
 		</>
 	);
 }
