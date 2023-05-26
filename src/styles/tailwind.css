@@ -42,7 +42,7 @@
 	}
 
 	.btn {
-		@apply cursor-pointer select-none font-semibold bg-primary-800 text-primary-50 text-base py-4 px-8 rounded-md hover:bg-opacity-80 transition-colors duration-300;
+		@apply cursor-pointer select-none font-semibold bg-primary-800 text-primary-50 text-base py-4 px-8 rounded-md hover:bg-opacity-80 transition-colors duration-300 disabled:bg-gray-600 disabled:cursor-not-allowed;
 	}
 
 	.on-scroll {

@@ -3,11 +3,18 @@ import SubscribeSVG from '../components/SVG/SubscribeSVG';
 import ContactSVGLeft from '../components/SVG/ContactSVGLeft';
 import ContactSVGRight from '../components/SVG/ContactSVGRight';
 import {toast} from 'react-toastify';
-import { toastEmitter } from '../configs/configs';
+import {toastEmitter} from '../configs/configs';
 export default function Contact() {
 	const handleSubmit = (e) => {
-		// e.target.reset()
+		const el = e.target.elements.submitBtn;
+		el.disabled = true;
+		setTimeout(() => {
+			el.disabled = false;
+		}, 2000);
+
+		e.target.reset()
 		e.preventDefault();
+		
 		toast.error('Sorry, something went wrong. Please try again later.', toastEmitter);
 	};
 
@@ -69,7 +76,7 @@ export default function Contact() {
 											</div>
 										</div>
 										<div className='w-full px-4 grid place-items-center'>
-											<input type='submit' className='btn' value='Submit Ticket' />
+											<input type='submit' className='btn' name='submitBtn' value='Submit Ticket' />
 										</div>
 									</div>
 								</form>
@@ -98,7 +105,7 @@ export default function Contact() {
 										placeholder='Enter your email'
 										className='w-full border dark:border-white dark:border-opacity-10 dark:bg-primary-100 dark:bg-opacity-10 rounded-md py-3 px-6 font-medium text-sub text-base placeholder-[#8a7f80] dark:placeholder-[#d7d3d3] outline-none focus-visible:shadow-none mb-4 focus:border-primary-800 dark:focus:border-opacity-50'
 									/>
-									<input className='btn text-center mb-4 w-full' type='submit' value='Subscribe' />
+									<input className='btn text-center mb-4 w-full' type='submit' name='submitBtn' value='Subscribe' />
 									<p className='text-base text-sub text-center font-medium leading-relaxed'>
 										No spam guaranteed, So please don’t send any spam mail.
 									</p>

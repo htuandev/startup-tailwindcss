@@ -29,23 +29,3 @@
 .animate-jump {
     animation: jump 1s infinite;
 }
-
-.tuanhngf {
-	position: relative;
-	width: 1.5rem;
-	height: 1.5rem;
-	margin-left: 0.5rem;
-	display: grid;
-	place-items: center;
-	z-index: 1;
-	cursor: pointer;
-}
-
-.tuanhngf svg {
-	fill: #e09843;
-    transition: all 500ms ;
-}
-
-.tuanhngf:hover svg {
-    transform: scale(1.2);
-}

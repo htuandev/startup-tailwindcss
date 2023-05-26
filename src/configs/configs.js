@@ -21,6 +21,8 @@ import {cssTransition} from 'react-toastify';
 
 export const animateList = ['fadeIn', 'fadeInLeft', 'fadeInUp'];
 
+export const tuanhngf = 'https://tuanhngf.dev/'
+
 export const glightboxOptions = {
 	source: 'youtube',
 	autoplayVideos: true,
